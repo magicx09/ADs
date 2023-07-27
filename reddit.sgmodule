@@ -1,0 +1,9 @@
+
+#!name=Reddit
+#!desc=过滤推广, 关 subreddit 的 NSFW 提示 @xream
+
+[Script]
+Reddit = type=http-response,pattern=^https?:\/\/gql\.reddit\.com,requires-body=1,max-size=0,timeout=30,script-path=reddit.js
+
+[MITM]
+hostname = %APPEND%, gql.reddit.com
