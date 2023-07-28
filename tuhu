@@ -1,0 +1,6 @@
+#!name = 途虎
+#!desc = 没有广告的途虎更值得
+
+^https:\/\/cl-gateway\.tuhu\.cn\/cl-common-api\/api\/personalCenter\/getCmsModuleList  url echo-response application/json echo-response https://raw.githubusercontent.com/togochina/ADs/main/tuhugetCmsModuleList.json
+
+hostname = cl-gateway.tuhu.cn
